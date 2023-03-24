@@ -1,0 +1,51 @@
+{
+  "cart": {
+    "items": [
+      {
+        "product": {
+          "id": "1d5bdcfa-5df1-46f6-aef1-bab735a9545e",
+          "title": "Pasta - Fusili Tri - Coloured",
+          "price": 79.06,
+          "images": [
+            {
+              "id": "ec2bb5ae-0a2e-419c-9a27-0897a9977d97",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "ed7d41a2-b550-4643-ac5d-6435b95f62d4",
+          "title": "Pur Source",
+          "price": 47.02,
+          "images": [
+            {
+              "id": "1861ab3f-a34b-4487-a839-87d823a3ebcf",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "In congue. Etiam justo. Etiam pretium iaculis justo."
+            }
+          ]
+        },
+        "amount": 2
+      },
+      {
+        "product": {
+          "id": "013c86c8-e4db-4ad5-8be0-a64cc3584d17",
+          "title": "Tea - Herbal Sweet Dreams",
+          "price": 96.64,
+          "images": [
+            {
+              "id": "1b85e7c5-67ea-4b88-abab-d5cc9bb718e0",
+              "url": "http://dummyimage.com/100x150.png/5fa2dd/ffffff",
+              "alt": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+            }
+          ]
+        },
+        "amount": 2
+      }
+    ]
+  }
+}

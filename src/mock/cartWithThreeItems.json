@@ -1,0 +1,51 @@
+{
+  "cart": {
+    "items": [
+      {
+        "product": {
+          "id": "efc6d5da-4362-4368-8338-5ad6adf1178f",
+          "title": "Loquat",
+          "price": 16.84,
+          "images": [
+            {
+              "id": "72bfac58-f4cd-4313-bc71-e6e00b284eef",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "2fecfdaf-2dc4-4178-9a64-89399d630330",
+          "title": "Rabbit - Frozen",
+          "price": 25.2,
+          "images": [
+            {
+              "id": "640e9ab4-f0b1-4f02-a8cf-b09600dde0f6",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "ac05b0d9-8778-4546-b1a0-78394f80891d",
+          "title": "Soup Campbells - Italian Wedding",
+          "price": 52.65,
+          "images": [
+            {
+              "id": "4d81b777-3136-41a6-8fcf-357c5011bb8d",
+              "url": "http://dummyimage.com/100x150.png/cc0000/ffffff",
+              "alt": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+            }
+          ]
+        },
+        "amount": 1
+      }
+    ]
+  }
+}

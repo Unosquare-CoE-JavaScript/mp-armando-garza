@@ -1,0 +1,186 @@
+{
+  "cart": {
+    "items": [
+      {
+        "product": {
+          "id": "6c2231a8-f1ad-49e7-acce-8bb4da283dd0",
+          "title": "Banana Turning",
+          "price": 17.06,
+          "images": [
+            {
+              "id": "52037eb3-df95-4db6-8a8a-22c0262ddf33",
+              "url": "http://dummyimage.com/100x150.png/ff4444/ffffff",
+              "alt": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."
+            }
+          ]
+        },
+        "amount": 4
+      },
+      {
+        "product": {
+          "id": "df4153c7-10b7-4bb5-9f73-d9d2420887eb",
+          "title": "Scotch - Queen Anne",
+          "price": 92.08,
+          "images": [
+            {
+              "id": "a4e9fbbd-9f8c-4dc0-b70f-7631ff9f08a2",
+              "url": "http://dummyimage.com/100x150.png/5fa2dd/ffffff",
+              "alt": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "164e9bcf-33b5-4fff-ab4d-fc5c353c0332",
+          "title": "Wine - Acient Coast Caberne",
+          "price": 99.08,
+          "images": [
+            {
+              "id": "e7afd245-4f7b-44c6-bf94-7684332d23dc",
+              "url": "http://dummyimage.com/100x150.png/ff4444/ffffff",
+              "alt": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "330ded46-d98d-4400-a9ca-e550b208dcad",
+          "title": "Pan Grease",
+          "price": 99.48,
+          "images": [
+            {
+              "id": "3d324d57-34ea-482a-9c6e-8d9414e97f41",
+              "url": "http://dummyimage.com/100x150.png/ff4444/ffffff",
+              "alt": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."
+            }
+          ]
+        },
+        "amount": 5
+      },
+      {
+        "product": {
+          "id": "05ed6de1-0b4b-4405-a0be-01b811412c5a",
+          "title": "Cake - French Pear Tart",
+          "price": 75.52,
+          "images": [
+            {
+              "id": "78d57d10-bbc2-4631-a229-7a462384a8a8",
+              "url": "http://dummyimage.com/100x150.png/5fa2dd/ffffff",
+              "alt": "Phasellus in felis. Donec semper sapien a libero. Nam dui."
+            }
+          ]
+        },
+        "amount": 4
+      },
+      {
+        "product": {
+          "id": "2fecfdaf-2dc4-4178-9a64-89399d630330",
+          "title": "Rabbit - Frozen",
+          "price": 25.2,
+          "images": [
+            {
+              "id": "640e9ab4-f0b1-4f02-a8cf-b09600dde0f6",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+            }
+          ]
+        },
+        "amount": 2
+      },
+      {
+        "product": {
+          "id": "6c2231a8-f1ad-49e7-acce-8bb4da283dd0",
+          "title": "Banana Turning",
+          "price": 17.06,
+          "images": [
+            {
+              "id": "52037eb3-df95-4db6-8a8a-22c0262ddf33",
+              "url": "http://dummyimage.com/100x150.png/ff4444/ffffff",
+              "alt": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."
+            }
+          ]
+        },
+        "amount": 1
+      },
+      {
+        "product": {
+          "id": "efc6d5da-4362-4368-8338-5ad6adf1178f",
+          "title": "Loquat",
+          "price": 16.84,
+          "images": [
+            {
+              "id": "72bfac58-f4cd-4313-bc71-e6e00b284eef",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+            }
+          ]
+        },
+        "amount": 5
+      },
+      {
+        "product": {
+          "id": "df4153c7-10b7-4bb5-9f73-d9d2420887eb",
+          "title": "Scotch - Queen Anne",
+          "price": 92.08,
+          "images": [
+            {
+              "id": "a4e9fbbd-9f8c-4dc0-b70f-7631ff9f08a2",
+              "url": "http://dummyimage.com/100x150.png/5fa2dd/ffffff",
+              "alt": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
+            }
+          ]
+        },
+        "amount": 2
+      },
+      {
+        "product": {
+          "id": "68a5e6a5-c8df-48a3-924d-707ca04af492",
+          "title": "Muffin Mix - Corn Harvest",
+          "price": 50.03,
+          "images": [
+            {
+              "id": "709d47ae-413a-437d-9c42-7d1650f7ba5d",
+              "url": "http://dummyimage.com/100x150.png/dddddd/000000",
+              "alt": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius."
+            }
+          ]
+        },
+        "amount": 4
+      },
+      {
+        "product": {
+          "id": "d3a58435-1a80-458a-8081-97d8f5569c5a",
+          "title": "Wine - White, Schroder And Schyl",
+          "price": 88.28,
+          "images": [
+            {
+              "id": "0a3fe0fb-ab0a-4c96-9a11-27157b8fa1a2",
+              "url": "http://dummyimage.com/100x150.png/cc0000/ffffff",
+              "alt": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+            }
+          ]
+        },
+        "amount": 5
+      },
+      {
+        "product": {
+          "id": "e6c80f06-7b2e-4346-bfef-64c79a5a2f62",
+          "title": "Sobe - Tropical Energy",
+          "price": 73.19,
+          "images": [
+            {
+              "id": "3c5d5549-07fc-4eab-8a5e-e05485a8070f",
+              "url": "http://dummyimage.com/100x150.png/5fa2dd/ffffff",
+              "alt": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat."
+            }
+          ]
+        },
+        "amount": 5
+      }
+    ]
+  }
+}
