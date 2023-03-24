@@ -1,5 +1,6 @@
 import {
   FormControl,
+  FormErrorMessage,
   FormHelperText,
   FormLabel,
   HStack,
@@ -13,83 +14,141 @@ import {
 } from '@chakra-ui/react';
 import { QuestionIcon } from '@chakra-ui/icons';
 import React from 'react';
+import { FieldErrors, UseFormRegister } from 'react-hook-form';
+import { PaymentInfo } from '../models';
 
 export interface PaymentInfoInputProps {
-  cardHolder: string;
-  cardNumber: string;
-  expiration: string;
-  cvv: string;
-  setCardHolder: (val: string) => void;
-  setCardNumber: (val: string) => void;
-  setExpiration: (val: string) => void;
-  setCvv: (val: string) => void;
+  register: UseFormRegister<PaymentInfo>;
+  errors: FieldErrors<PaymentInfo>;
 }
 
 export default function PaymentInfoInput(props: PaymentInfoInputProps) {
-  const {
-    cardHolder,
-    cardNumber,
-    expiration,
-    cvv,
-    setCardHolder,
-    setCardNumber,
-    setExpiration,
-    setCvv,
-  } = props;
+  const { register, errors } = props;
 
   return (
     <VStack>
-      <FormControl isRequired>
-        <FormLabel>Card holder</FormLabel>
-        <Input
-          type="text"
-          value={cardHolder}
-          onChange={(e) => setCardHolder(e.target.value)}
-        />
-      </FormControl>
-      <FormControl isRequired>
-        <FormLabel>Card number</FormLabel>
-        <Input
-          type="text"
-          value={cardNumber}
-          onChange={(e) => setCardNumber(e.target.value)}
-        />
-      </FormControl>
+      <CardHolderInput register={register} errors={errors} />
+      <CardNumberInput register={register} errors={errors} />
       <HStack>
-        <FormControl isRequired>
-          <FormLabel>Expiration date</FormLabel>
-          <Input
-            type="text"
-            value={expiration}
-            onChange={(e) => setExpiration(e.target.value)}
-          />
-          <FormHelperText>MM/YY</FormHelperText>
-        </FormControl>
-        <FormControl isRequired>
-          <FormLabel>CVV</FormLabel>
-          <Input
-            type="password"
-            value={cvv}
-            onChange={(e) => setCvv(e.target.value)}
-          />
-          <FormHelperText>
-            <Popover trigger="hover">
-              <PopoverTrigger>
-                <QuestionIcon />
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverArrow />
-                <PopoverBody>
-                  The CVV/CVC code (Card Verification Value/Code) is located on
-                  the back of your credit/debit card on the right side of the
-                  white signature strip; it is always the last 3 digits in case
-                  of VISA and MasterCard.
-                </PopoverBody>
-              </PopoverContent>
-            </Popover>
-          </FormHelperText>
-        </FormControl>
+        <ExpirationDateInput register={register} errors={errors} />
+        <CvvInput register={register} errors={errors} />
       </HStack>
     </VStack>
+  );
+}
+
+function CardHolderInput(props: PaymentInfoInputProps) {
+  const { register, errors } = props;
+
+  return (
+    <FormControl isRequired isInvalid={!!errors.cardHolder}>
+      <FormLabel>Card holder</FormLabel>
+      <Input
+        type="text"
+        {...register('cardHolder', {
+          required: true,
+          minLength: {
+            value: 3,
+            message: 'At least 3 characters required.',
+          },
+          maxLength: 50,
+        })}
+        maxLength={50}
+      />
+      {errors.cardHolder && (
+        <FormErrorMessage>{errors.cardHolder.message}</FormErrorMessage>
+      )}
+    </FormControl>
+  );
+}
+
+function CardNumberInput(props: PaymentInfoInputProps) {
+  const { register, errors } = props;
+
+  return (
+    <FormControl isRequired isInvalid={!!errors.cardNumber}>
+      <FormLabel>Card number</FormLabel>
+      <Input
+        type="text"
+        {...register('cardNumber', {
+          required: true,
+          pattern: {
+            value: /^[0-9]{16}$/,
+            message: 'Enter a valid card number.',
+          },
+        })}
+        maxLength={16}
+      />
+      {errors.cardNumber && (
+        <FormErrorMessage>{errors.cardNumber.message}</FormErrorMessage>
+      )}
+    </FormControl>
+  );
+}
+
+function ExpirationDateInput(props: PaymentInfoInputProps) {
+  const { register, errors } = props;
+
+  return (
+    <FormControl isRequired isInvalid={!!errors.expiration}>
+      <FormLabel>Expiration date</FormLabel>
+      <Input
+        type="text"
+        {...register('expiration', {
+          required: true,
+          pattern: {
+            value: /^[0-9]{2}\/[0-9]{2}$/,
+            message: 'Enter a valid date.',
+          },
+        })}
+        maxLength={5}
+      />
+      {errors.expiration ? (
+        <FormErrorMessage>{errors.expiration.message}</FormErrorMessage>
+      ) : (
+        <FormHelperText>MM/YY</FormHelperText>
+      )}
+    </FormControl>
+  );
+}
+
+function CvvInput(props: PaymentInfoInputProps) {
+  const { register, errors } = props;
+
+  return (
+    <FormControl isRequired isInvalid={!!errors.cvv}>
+      <FormLabel>CVV</FormLabel>
+      <Input
+        type="password"
+        {...register('cvv', {
+          required: true,
+          pattern: {
+            value: /^[0-9]{3}$/,
+            message: 'Enter a valid CVV.',
+          },
+        })}
+        maxLength={3}
+      />
+      {errors.cvv ? (
+        <FormErrorMessage>{errors.cvv.message}</FormErrorMessage>
+      ) : (
+        <FormHelperText>
+          <Popover trigger="hover">
+            <PopoverTrigger>
+              <QuestionIcon />
+            </PopoverTrigger>
+            <PopoverContent>
+              <PopoverArrow />
+              <PopoverBody>
+                The CVV/CVC code (Card Verification Value/Code) is located on
+                the back of your credit/debit card on the right side of the
+                white signature strip; it is always the last 3 digits in case of
+                VISA and MasterCard.
+              </PopoverBody>
+            </PopoverContent>
+          </Popover>
+        </FormHelperText>
+      )}
+    </FormControl>
   );
 }

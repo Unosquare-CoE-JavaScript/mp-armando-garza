@@ -54,6 +54,7 @@ export interface ProductImage {
 }
 
 export interface PaymentInfo {
+  cardHolder: string;
   cardNumber: string;
   expiration: string;
   cvv: string;
