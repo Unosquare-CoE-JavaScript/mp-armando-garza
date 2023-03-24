@@ -73,6 +73,7 @@ function CardNumberInput(props: PaymentInfoInputProps) {
         {...register('cardNumber', {
           required: true,
           pattern: {
+            // ToDo use `isCreditCard` from `validator` lib
             value: /^[0-9]{16}$/,
             message: 'Enter a valid card number.',
           },
@@ -97,6 +98,7 @@ function ExpirationDateInput(props: PaymentInfoInputProps) {
         {...register('expiration', {
           required: true,
           pattern: {
+            // ToDo actually validate the date, i.e. this accepts stuff like 14/43
             value: /^[0-9]{2}\/[0-9]{2}$/,
             message: 'Enter a valid date.',
           },

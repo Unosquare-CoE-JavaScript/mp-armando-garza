@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Cart } from '../models';
+import currency from 'currency.js';
 
 export interface ProductListProps {
   cart: Cart;
@@ -24,7 +25,7 @@ export default function ProductsList({ cart }: ProductListProps) {
             <Box fontSize="sm">
               Price:
               <Text as="span" ml={1} fontWeight="bold">
-                {item.product.price}
+                {currency(item.product.price).format()}
               </Text>
             </Box>
             <Box fontSize="sm">Quantity: {item.amount}</Box>

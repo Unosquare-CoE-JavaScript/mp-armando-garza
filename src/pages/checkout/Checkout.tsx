@@ -62,6 +62,7 @@ export default function Checkout() {
         <Heading as="h2" size="md">
           Payment method
         </Heading>
+        {/* ToDo maybe extract this to its own component? */}
         <form onSubmit={handleSubmit(payMutation.doPay)}>
           <Flex mt={4}>
             <Box maxWidth={400}>
