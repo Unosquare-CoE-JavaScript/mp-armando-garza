@@ -37,3 +37,5 @@ Then you can fill the required information in the **Payment method** section. A 
 - Mastercard cards start with a "5"
 
 You should see the correct promotion applied depending on the card number and the items in the cart.
+
+Finally, you can click the **Pay** button to trigger the mock API call. You can use "6666666666666666" as a card number to force an API error.
